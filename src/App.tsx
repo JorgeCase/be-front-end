@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useFetch from "./hooks/userFetch";
 import Table from "./components/Table";
-import SearchBar from "./components/SearchBar";
+// import SearchBar from "./components/SearchBar";
 import { formatPhoneNumber } from "./utils/formatPhoneNumber";
 import { formatDate } from "./utils/formatDate";
 import { User } from "./types/User";
@@ -35,11 +35,35 @@ const App: React.FC = () => {
 
   // Renderização da aplicação com feedback
   return (
-    <div className="App">
-      <SearchBar onSearch={setSearchTerm} />
-      {loading && <p>Loading...</p>}
-      {error && typeof error === 'string' && <p>Error: {error}</p>}
-      {!loading && !error && <Table users={formattedUsers} searchTerm={searchTerm} />}
+    <div className="app-container">
+      <header className="header">
+        <div className="logo">
+          <img src="/path/to/logo.png" alt="Logo" />
+        </div>
+      </header>
+      <p></p>
+      <div className="search-header">
+        <h1 className="title">Funcionários</h1>
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Pesquisar..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="search-input"
+          />
+          <button className="search-button">
+            <img src="/path/to/search-icon.png" alt="Search" />
+          </button>
+        </div>
+      </div>
+      {loading? (
+        <p>Loading...</p>
+      ) : (
+        <div className="table-container">
+          <Table users={formattedUsers} searchTerm={searchTerm} />
+        </div>
+      )}
     </div>
   );
 };
