@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# Teste Técnico Front-end Be
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é o resultado do teste técnico front-end da Be, que consiste na construção da visualização de uma tabela de dados provenientes de uma API simulada utilizando React e TypeScript.
 
-## Available Scripts
+## Sobre o projeto
 
-In the project directory, you can run:
+O objetivo é desenvolver uma aplicação que exiba uma tabela responsiva com informações de funcionários, incluindo a capacidade de filtrar dados por nome, cargo ou telefone.
 
-### `npm start`
+## Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para rodar este projeto em sua máquina local, certifique-se de ter isntalado:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Git
+- Node.js
+- Yarn ou npm
 
-### `npm test`
+## Instruções para rodar a aplicação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone este repositório em sua máquina local:
+- git clone `git@github.com:JorgeCase/be-front-end.git`
+2. Instale as dependências do projeto:
+- `cd be-front-end`
+- `npm start`
+3. Inicie o json-server para simular a API:
+- `json-server --watch db.json`
+4. Inicie o projeto React:
+- `npm start`
+5. Acesse a aplicação em seu navegador:
+- `http://localhost:3000`
 
-### `npm run build`
+## Funcionalidades Implementadas
+- Exibição de tabela responsiva com dados dos funcionários.
+- Filtragem de dados por nome, cargo ou telefone.
+- Formatação de datas e números de telefone no front-end.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estrutura do projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A estrutura do projeto está organizada da seguinte forma:
+- **src/**: Contém os arquivos principais da aplicação.
+- **components/**: Contém os componentes da aplicação.
+- **pages/**: Contém as páginas da aplicação.
+- **utils/**: Funções utilitárias e imagens utilizadas.
+- **App.tsx**: Arquivo principal da aplicação.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Considerações Finais
+Este projeto foi desenvolvido utilizando React e TypeScript, com o objetivo de demonstrar minhas habilidades no desenvolvimento de uma aplicação web. Caso encontre algum problema ou tenha alguma sugestão, sinta-se à vontade para abrir uma issue ou um pull request neste repositório.
