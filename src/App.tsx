@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import useFetch from "./hooks/userFetch";
 import Table from "./components/Table";
-// import SearchBar from "./components/SearchBar";
 import { formatPhoneNumber } from "./utils/formatPhoneNumber";
 import { formatDate } from "./utils/formatDate";
 import { User } from "./types/User";
@@ -19,7 +18,7 @@ const App: React.FC = () => {
   );
 
   const formattedUsers = filteredUsers.map(user => ({
-    ...user,
+   ...user,
     admission_date: formatDate(user.admission_date), // Formata a data de admissão
     phone: formatPhoneNumber(user.phone), // Formata o número do telefone
   }));
@@ -38,10 +37,9 @@ const App: React.FC = () => {
     <div className="app-container">
       <header className="header">
         <div className="logo">
-          <img src="/path/to/logo.png" alt="Logo" />
+          <img src="src/utils/logo.png" alt="Logo" />
         </div>
       </header>
-      <p></p>
       <div className="search-header">
         <h1 className="title">Funcionários</h1>
         <div className="search-container">
@@ -53,7 +51,7 @@ const App: React.FC = () => {
             className="search-input"
           />
           <button className="search-button">
-            <img src="/path/to/search-icon.png" alt="Search" />
+            <img src="src/utils/searchIcon.png" alt="Search" />
           </button>
         </div>
       </div>

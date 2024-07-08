@@ -15,15 +15,16 @@
   border-radius: 8px 8px 0px 0px;
   background: linear-gradient(180deg, #5A84C0 0%, #594ED2 100%);
   box-shadow: 0px 1px 2px 0px #00000033;
-
-
-
-
 }
 
 .table-head-cell {
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
   text-align: left;
 }
 
@@ -33,6 +34,11 @@
 
 .table-cell {
   padding: 10px;
+  text-align: left;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
   text-align: left;
 }
 

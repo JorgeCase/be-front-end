@@ -6,6 +6,7 @@
   margin: 40px auto;
   padding: 20px;
   background-color: #FFFFFF;
+  font-family: Roboto;
 }
 
 .header {
@@ -46,6 +47,12 @@
   top: 104px;
   left: 32px;
   color: #1C1C1C;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  text-align: left;
+
 }
 
 .search {
